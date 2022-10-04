@@ -1,0 +1,57 @@
+body {
+  background: lightgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  margin-left: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result {
+  border: 2px;
+  background: white;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid grey;
+  border-top: 15px solid black;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+.error {
+  border: 1px solid darkred;
+  border-radius: 1em;
+  padding: 1rem;
+  color: darkred;
+  background: pink;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
