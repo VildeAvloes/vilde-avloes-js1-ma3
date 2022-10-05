@@ -25,9 +25,10 @@ h1 {
   padding: 1em;
   border-radius: 1em;
   max-width: 200px;
-  display: flex;
+  min-width: 200px;
+  display: flex wrap column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .loader {
@@ -40,9 +41,9 @@ h1 {
 }
 
 .error {
-  border: 1px solid darkred;
+  border: 2px solid darkred;
   border-radius: 1em;
-  padding: 1rem;
+  padding: 1em;
   color: darkred;
   background: pink;
 }
