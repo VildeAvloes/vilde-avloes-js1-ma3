@@ -11,6 +11,8 @@ async function getGames() {
 
     resultsContainer.innerHTML = "";
 
+    console.log(results);
+
     for (let i = 0; i < facts.length; i++) {
       if (i === 8) {
         break;
@@ -18,6 +20,7 @@ async function getGames() {
       resultsContainer.innerHTML += `<div class="result">
                                         <p>Name: ${facts[i].name}</p> 
                                         <p>Rating: ${facts[i].rating}<p>
+                                        <p>Tags: ${Object.keys(facts[i]).length}<p>
                                         </div>`;
     }
   } catch (error) {
